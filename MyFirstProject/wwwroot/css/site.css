@@ -1,0 +1,37 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.Sd-body {
+
+    background: #38a5ff;
+    color: #fff;
+}
+
+.sd-div{
+   border: 2px solid;
+   text-align: center;
+   justify-content:center;
+   padding: 20px 30px;
+   width: 45%;
+   margin-left: 5%;
+}

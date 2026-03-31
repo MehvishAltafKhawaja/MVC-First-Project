@@ -1,0 +1,116 @@
+﻿
+@{
+    ViewData["Title"] = "Home Page";
+}
+<style>
+     *{
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         font-family:Georgia, 'Times New Roman', Times, serif;
+     }
+     .home-dev h1 {
+         justify-content:center;
+         text-align: center;
+         color:grey;
+     }
+
+    .home-dev p {
+        justify-content: center;
+        text-align: center;
+        color:lightslategrey;
+    }
+
+    .home-dev p b {
+        justify-content: center;
+        text-align: center;
+        color: black;
+    }
+    .container1{
+        display:flex-inline;
+        border:1px solid;
+        padding : 40px 30px;
+        border-radius: 20px;
+        border-color: grey;
+        box-shadow: 2px 0 8px;
+        position:relative;
+        
+
+    }
+    .container1 img {
+        height:600px;
+        width: 450px;
+        margin-left: 40px;
+        z-index: 0;
+    }
+    .container1 img:hover{
+        z-index: 1;
+        transform: scale(1.01);
+        box-shadow: 3px 0 7px red ;
+      
+    }
+     .image-box h3{
+         position:absolute;
+         right:6%;
+         top: 20%;
+         font-family:Georgia, 'Times New Roman', Times, serif;
+         font-size:35px;
+         line-height: 1.8;
+         word-spacing: 5px;
+     }
+     .btn{
+        
+        height: 45px;
+        background: #fff;
+        border:1px solid;
+        border-color: deepskyblue;
+        outline: none;
+        border-radius: 40px;
+        box-shadow: 0 0 10px rgba(0,0,0,.1);
+        cursor: pointer;
+        font-size: 16px;
+        color: #333;
+        font-weight: 600;
+        position: absolute;
+        right: 13%;
+        top: 65%;
+        width:25%;
+        z-index:0;
+     }
+     .btn:hover{
+            z-index: 1;
+            transform: scale(1.1);
+            box-shadow: 3px 0 5px red;
+            
+     }
+
+</style>
+
+
+<html>
+   <head>
+      <title>Index</title>
+   </head>
+   
+   <body>
+       <div class="home-dev">
+           <h1>WellCome To ILS</h1><br />
+           <p>In This Seasion You Will Learn About <b>ASP.NET CORE</b></p>
+       </div>
+       <hr />
+       <div  class="container1">
+           <div class="image-box">
+               <img src="~/Image/index.jpeg" alt="ils-image" />
+               <h3>
+                “Empowering minds <br /> through <b style="color:red">CODE</b>, <br>
+                   shaping the future <br />with technology.”
+               </h3>
+               <button type="submit" class="btn">Get Start</button>
+
+           </div>
+       </div>
+
+   </body>
+
+   
+</html>
