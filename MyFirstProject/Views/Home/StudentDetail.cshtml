@@ -1,0 +1,25 @@
+﻿@model IEnumerable<MyFirstProject.Models.StudentDetails>  
+
+    <html>
+        <head></head>
+
+        <body>
+             <h1>Student Details</h1>
+             <hr />
+           <div>
+           @{
+                   foreach (var item in Model)
+                   {
+                       <h3>Name : @item.Name</h3>
+                       <h3>RollNo : @item.RollNo</h3>
+                       <h3>Course : @item.Course</h3>
+                       <h3>Fee : @item.Fee</h3>
+                       <h3>Address : @item.Address</h3>
+                       <hr />
+                   }
+            }
+            </div>
+        </body>
+
+>
+</html>
