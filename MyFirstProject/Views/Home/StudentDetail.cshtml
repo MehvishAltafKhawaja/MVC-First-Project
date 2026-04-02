@@ -1,25 +1,103 @@
 ﻿@model IEnumerable<MyFirstProject.Models.StudentDetails>  
 
-    <html>
-        <head></head>
+<html>
+      <head>
+          <title>@ViewData["Title"]= "Student-Data"</title>
+           <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Georgia, serif;
+        }
 
-        <body>
+        body {
+            background: #0f172a; /* dark background */
+            color: #fff;
+            padding: 30px;
+        }
+
+        /* Heading */
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #38bdf8;
+        }
+
+        /* Table Container */
+        div {
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Table Styling */
+        .std-tb {
+            width: 90%;
+            border-collapse: collapse;
+            background: #1e293b;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,250,0.5);
+        }
+
+            /* Table Header */
+            .std-tb th {
+                background: #38bdf8;
+                color: #000;
+                padding: 12px;
+                text-align: left;
+                font-size: 16px;
+            }
+
+            /* Table Data */
+            .std-tb td {
+                padding: 12px;
+                border-bottom: 1px solid #334155;
+            }
+
+            /* Alternate Row Color */
+            .std-tb tr:nth-child(even) {
+                background: #0f172a;
+            }
+
+            /* Hover Effect */
+            .std-tb tr:hover {
+                background: #334155;
+                transition: 0.3s;
+            }
+
+        /* Responsive */
+            /* --> wwwroot --> css --> site.css */
+           </style>
+       </head>
+
+
+      <body>
              <h1>Student Details</h1>
              <hr />
-           <div>
-           @{
-                   foreach (var item in Model)
-                   {
-                       <h3>Name : @item.Name</h3>
-                       <h3>RollNo : @item.RollNo</h3>
-                       <h3>Course : @item.Course</h3>
-                       <h3>Fee : @item.Fee</h3>
-                       <h3>Address : @item.Address</h3>
-                       <hr />
-                   }
-            }
-            </div>
-        </body>
+           <div>       
+             <table class="std-tb">
+                <tr>
+                      <th>Name</th>
+                      <th>Roll.No</th>
+                      <th>Course</th>
+                      <th>Fee</th>
+                      <th>Address</th>
+                </tr>
+              @{
+                foreach (var item in Model)
+                {
+                   <tr>
+                      <td>@item.Name</td>
+                      <td>@item.RollNo</td>
+                      <td>@item.Course</td>
+                      <td>@item.Fee</td>
+                      <td>@item.Address</td>
+                   </tr>
+                }
 
->
+               }
+             </table>
+           </div>
+      </body>
 </html>

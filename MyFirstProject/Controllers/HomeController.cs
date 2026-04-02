@@ -21,13 +21,16 @@ namespace MyFirstProject.Controllers
 
         public IActionResult AboutUs()
         {
-       
             return View();
         }
 
       
         public IActionResult Privacy()
         {
+            ViewData["Name"] = "Tanveer";
+            ViewData["Course"] = "Java";
+            ViewData["Fee"] = 60000; 
+            ViewData["Time"] = 30;
             return View();
         }
         

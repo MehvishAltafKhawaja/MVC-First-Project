@@ -1,6 +1,17 @@
 ﻿@{
-    ViewData["Title"] = "Privacy Policy";
+    ViewData["Title"] = "Student Mentor";
 }
 <h1>@ViewData["Title"]</h1>
 
-<p>Use  page to detail your site's privacy policy.</p>
+@{
+    var fee = Convert.ToInt32(ViewData["Fee"]);
+    var time = Convert.ToInt32(ViewData["Time"]);
+    var total = fee / time;
+}
+<div>
+    <h3>Name:  @ViewData["Name"]</h3>
+    <h3>Course: @ViewData["Course"]</h3>
+    <h3>Fee: @ViewData["Fee"]</h3>
+    <h3>Time: @ViewData["Time"]</h3>
+    <h3>Installment: @total </h3>
+</div>
