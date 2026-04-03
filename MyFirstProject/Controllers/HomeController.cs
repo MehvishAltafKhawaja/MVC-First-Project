@@ -21,10 +21,20 @@ namespace MyFirstProject.Controllers
 
         public IActionResult AboutUs()
         {
+            //ViewBag.Name = "Lays";
+            //ViewBag.Prise = 10;
+            //ViewBag.Qyt = 2000;
+            //ViewBag.Date = "01-12-2026";
+            TempData["Message"] = "I am from ABout Page Redirected to Headmanage";
+
+            return RedirectToAction("HeadManage");
+        }
+
+        public IActionResult HeadManage()
+        {
             return View();
         }
 
-      
         public IActionResult Privacy()
         {
             ViewData["Name"] = "Tanveer";

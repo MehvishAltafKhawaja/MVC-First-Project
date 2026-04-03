@@ -1,1 +1,25 @@
-﻿
+﻿@* 
+<html>
+
+      
+@{
+        var pr = ViewBag.Prise;
+        var qt = ViewBag.Qyt;
+        var res = pr * qt;
+}
+    <body>
+           <h1>ViewBag-Data</h1>
+           <div>
+               <p>Name: @ViewBag.Name</p>
+               <p>Prise: @ViewBag.Prise</p>
+               <p>Qyt: @ViewBag.Qyt</p>
+               <p>Date: @ViewBag.Date</p>
+               <p> res : @ViewBag.Prise * @ViewBag.Qyt</p>
+           </div>
+           <p>@res</p>
+</body>
+  
+</html>
+
+
+ *@
