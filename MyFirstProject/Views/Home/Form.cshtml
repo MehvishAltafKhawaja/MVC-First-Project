@@ -1,0 +1,35 @@
+﻿<html>
+    <head>
+        <title>@ViewData["Title"]="Form"</title>
+    </head>
+    <body>
+        <form class="h-form" action="/Home/Profile">
+            <div>
+                <label>Username</label>
+            </div>
+            <div>
+                <input type="text"  name="username" required spellcheck="false"/>
+            </div>
+              <div>
+                <label>Address</label>
+            </div>
+            <div>
+            <input type="text" name="address" required />
+            </div>
+        <div>
+            <label>Age</label>
+        </div>
+        <div>
+            <input type="text" name="age" required />
+        </div>
+        <div>
+            <label>Qualification</label>
+        </div>
+        <div>
+            <input type="text" name="qualification" required />
+        </div>
+
+        <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>

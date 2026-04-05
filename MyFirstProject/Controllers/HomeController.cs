@@ -18,6 +18,41 @@ namespace MyFirstProject.Controllers
         {
             return View();
         }
+        public IActionResult Form()
+        { 
+            return View();
+        }
+
+        public IActionResult Profile(string username, string address, string age, string qualification) {
+
+            ViewBag.Name = username;
+            ViewBag.Address = address;
+            ViewBag.Age = age;
+            ViewBag.Qfy = qualification;
+            return View();
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         public IActionResult AboutUs()
         {
