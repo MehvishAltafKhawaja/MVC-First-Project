@@ -1,0 +1,32 @@
+﻿
+<html>
+    <head></head>
+    <body> 
+    <form class="s-form" action="/Home/StudentProfile" method="post">
+        <h3>Student Form</h3>
+        <div><label>Student-Name</label></div>
+        <div> <input required type="text" name="sname" /></div>
+
+        <div><label>Student-Id</label></div>
+        <div> <input required type="number" name="sid" /></div>
+
+        <div><label>Student-class</label></div>
+        <div> <input required type="text" name="sclass" /></div>
+
+        <div><label>Student-address</label></div>
+        <div> <input required type="text" name="saddress" /></div>
+
+        <div><label>Student-gender</label></div>
+        <div> 
+          <select name="sgen">
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+                <option value="Other">Other</option>
+          </select>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+    </body>
+</html>

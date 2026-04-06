@@ -32,8 +32,21 @@ namespace MyFirstProject.Controllers
             return View();
         }
 
+        public IActionResult StudentForm()
+        {
+            return View();
+        }
 
-
+        [HttpPost]
+        public IActionResult StudentProfile()
+        {
+            ViewBag.Name = Request.Form["sname"];
+            ViewBag.RollNo = Request.Form["sid"];
+            ViewBag.Class = Request.Form["sclass"];
+            ViewBag.Address= Request.Form["saddress"];
+            ViewBag.Gender = Request.Form["sgen"];
+            return View();
+        }
 
 
 
