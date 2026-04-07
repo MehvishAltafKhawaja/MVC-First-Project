@@ -1,6 +1,67 @@
 ﻿<html>
     <head>
-        <title>@ViewData["Title"]="Form"</title>
+        <title>@ViewData["Title"]="Teacher-Form"</title>
+        <style>
+        body {
+            background-color: #0b1a2f;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Form Container */
+        .h-form {
+            width: 350px;
+            margin: 60px auto;
+            padding: 25px;
+            background: #0f2747;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0, 123, 255, 0.5);
+            color: white;
+        }
+
+            /* Labels */
+            .h-form label {
+                font-weight: 500;
+                margin-top: 12px;
+                display: block;
+            }
+
+            /* Inputs */
+            .h-form input {
+                width: 100%;
+                padding: 8px;
+                margin-top: 5px;
+                margin-bottom: 12px;
+                border: none;
+                border-radius: 6px;
+                outline: none;
+                background-color: #1e3a5f;
+                color: white;
+            }
+
+                /* Focus Effect */
+                .h-form input:focus {
+                    border: 1px solid #4fc3f7;
+                    box-shadow: 0 0 5px #4fc3f7;
+                }
+
+            /* Button */
+            .h-form button {
+                width: 100%;
+                padding: 10px;
+                background: #4fc3f7;
+                border: none;
+                border-radius: 6px;
+                color: black;
+                font-weight: bold;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+
+                /* Button Hover */
+                .h-form button:hover {
+                    background: #29b6f6;
+                }
+        </style>
     </head>
     <body>
         <form class="h-form" action="/Home/Profile">

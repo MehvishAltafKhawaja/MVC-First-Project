@@ -37,18 +37,19 @@ namespace MyFirstProject.Controllers
             return View();
         }
 
+
         [HttpPost]
-        public IActionResult StudentProfile()
+        public IActionResult StudentProfile(IFormCollection prod)
         {
-            ViewBag.Name = Request.Form["sname"];
-            ViewBag.RollNo = Request.Form["sid"];
-            ViewBag.Class = Request.Form["sclass"];
-            ViewBag.Address= Request.Form["saddress"];
-            ViewBag.Gender = Request.Form["sgen"];
+            ViewBag.Name = prod["sname"];
+            ViewBag.RollNo = data["sid"];
+            ViewBag.Class = data["sclass"];
+            ViewBag.Address= data["saddress"];
+            ViewBag.Gender = data["sgen"];
             return View();
         }
 
-
+       
 
 
 
